@@ -4,7 +4,8 @@
 
 开发环境: Win10 +IntelliJ IDEA / Maven / Mysql /Visual Studio Code 
 
-
+前端: fooxm_fore
+后端: foodxm
 
 
 软件架构: SpringColud + Spring + SpringMVC +SpringBoot + MyBatis + MySql + Vue 

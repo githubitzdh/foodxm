@@ -1,0 +1,23 @@
+# 服务端口号
+server:
+  port: 10010
+# 服务名
+spring:
+  application:
+    name: zuuldemo
+#网关配置: 访问路径 和 服务路径 对应关系
+zuul:
+  prefix: /api      #前缀
+  #routes:
+   # userService: /userService/**
+      # path: /userService/**        #访问路径
+      # url: http://localhost:8090   #服务路径
+      # serviceId: userService      #服务名称
+ #注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+
+

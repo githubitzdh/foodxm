@@ -1,0 +1,33 @@
+html,body {
+    height: 100%;
+}
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    /* 在指定区域内绘制元素 */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    /* 去掉超链接的下划线 */
+    text-decoration: none;
+}
+ul,li {
+    /* 列表标签取消样式 */
+    list-style: none;
+}
+/* 卡片视图边边阴影减少 */
+ .el-card{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace必须为对应dao接口的全类名
+ -->
+<mapper namespace="com.czxy.demo1.dao.UserDao">
+	<!--<select id="selectAll" resultType="com.czxy.demo1.domain.User">
+		select * from user
+	</select> -->
+	<select id="">
+		<!--select * from user where utype='买家'
+		<if test="username!=null and username!=''">
+          and username like #{username}
+	 </if>-->
+
+		<!--select * from product
+		<where>
+			<if test="pname!=null and pname!=''">
+				and pname like #{pname}
+			</if>
+		</where>-->
+
+
+
+
+
+
+
+
+		select  * from orders where uid=#{id}
+		   <if test="orderVo.status!=null  and orderVo.status!=''">
+		     and status = #{orderVo.status}
+	   </if>
+		   <if test="orderVo.stpostTime!=null  and orderVo.stpostTime!=''">
+	    and ordertime >= #{orderVo.stpostTime}
+	   </if>
+	 <if test="orderVo.endpostTime!=null  and orderVo.endpostTime!=''">
+	      <![CDATA[and ordertime <= #{orderVo.endpostTime}]]>
+   </if>
+
+	</select>
+</mapper>
